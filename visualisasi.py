@@ -1,3 +1,4 @@
+import os
 from pyspark.sql import SparkSession
 from pyspark.ml.regression import RandomForestRegressionModel
 import matplotlib.pyplot as plt
@@ -11,6 +12,7 @@ if __name__ == "__main__":
         .master("local[*]") \
         .getOrCreate()
     spark.sparkContext.setLogLevel("WARN")
+    os.makedirs("hasil_visualisasi", exist_ok=True)
 
     print("2. Membaca Data dan Model yang sudah disimpan...")
     # Baca data yang sudah siap
@@ -46,7 +48,7 @@ if __name__ == "__main__":
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
-    plt.savefig('grafik_harga_vs_prediksi.png')
+    plt.savefig('hasil_visualisasi/grafik_harga_vs_prediksi.png')
     plt.close()
 
     print("7. Menggambar Grafik Feature Importance dengan Nama Asli...")
@@ -79,7 +81,7 @@ if __name__ == "__main__":
     plt.xlabel('Tingkat Kepentingan')
     plt.ylabel('Nama Fitur')
     plt.tight_layout()
-    plt.savefig('grafik_feature_importance.png')
+    plt.savefig('hasil_visualisasi/grafik_feature_importance.png')
     plt.close()
 
     print("=== SELESAI! Cek grafik barumu, namanya sudah otomatis berubah ===")
