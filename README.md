@@ -197,8 +197,8 @@ python train_model.py
 
 | Nama                    | NIM       | GitHub |
 |-------------------------|-----------|--------|
-| Ahmad Rizqi             | 122450138 | [@ikii-sd](https://github.com/ikii-sd) |
 | Lidia Natasyah Marpaung | 123450015 | [@LidiaNatasyah](https://github.com/LidiaNatasyah) |
+| Ahmad Rizqi             | 122450138 | [@ikii-sd](https://github.com/ikii-sd) |
 | Benget Sidabutar        | 123450047 | [@BengetSidabutar](https://github.com/BengetSidabutar) |
 | Aisyah Musfirah         | 123450084 | [@aisyahmusfirah](https://github.com/aisyahmusfirah) |
 | Melinza Nabila          | 123450122 | [@MelinzaNabila122](https://github.com/MelinzaNabila122) |
